@@ -1,0 +1,2 @@
+external generic_print : 'a -> unit = "generic_print"
+				       
