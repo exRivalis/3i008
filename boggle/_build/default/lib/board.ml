@@ -34,7 +34,7 @@ let neighbours board (i, j) =
 		| [] -> l
 		|hd::tl -> if is_valid_pos board hd then hd :: (f tl) else f tl in
 	let v = f voisins in
-	v
+	Iter.to_rev_list v
 	(* TODO retourner un iterateur pas une liste *)
 
 let make dim make_char =
